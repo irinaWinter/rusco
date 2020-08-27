@@ -6,11 +6,14 @@
     <title>РУСко</title>
   </head>
   <body>
+    <!-- Хедер -->
     <header class="header">
       <div class="header__container container">
+        <!-- Логотип -->
         <a class="header__logo">
           <img class="header__logo-img" src="" alt="Логотип компании">
         </a>
+        <!-- Навигация по сайту -->
         <nav class="header__main-nav main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -30,6 +33,7 @@
             </li>
           </ul>
         </nav>
+        <!-- Контактная информация -->
         <section class="header__contacts contacts">
           <h2 class="visually-hidden">Контактная информация</h2>
           <ul class="contacts__list">
@@ -43,5 +47,72 @@
         </section>
       </div>
     </header>
+    <!-- Основное содержимое -->
+    <main class="page-main">
+      <!-- Баннер -->
+      <section class="page-main__slider slider">
+        <h2 class="visually-hidden">Услуги</h2>
+        <div class="slider__container container">
+          <!-- Слайды -->
+          <ul class="slider__list">
+            <!-- Первый слайд -->
+            <li class="slider__slide slide">
+              <p class="slide__slogan-text">Не отвлекайтесь от бизнеса, <span class="slide__important-text">бухгалтерия &mdash; наша забота</span></p>
+              <ul class="slide__list">
+                <li class="slide__item">Поможем малому бизнесу привести в порядок бухгалтерию и выбрать систему налогообложения.</li>
+                <li class="slide__item">Предельно честно расскажем и покажем, как и&nbsp;за что вы платите.</li>
+                <li class="slide__item">Возьмем на себя бухгалтерский и кадровый учет.</li>
+              </ul>
+              <button class="slide__button button" type="button">Получить <span class="button__important-text">бесплатную</span> консультацию</button>
+            </li>
+            <!-- Второй слайд -->
+            <li class="slider__slide slide">
+              <p class="slide__slogan-text">Второй <span class="slide__important-text">слайд</span></p>
+              <ul class="slide__list">
+                <li class="slide__item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li class="slide__item">Fugiat, molestias quaerat nam dolor neque, aut quo beatae commodi reprehenderit autem voluptates dolore repudiandae et veritatis doloribus voluptas, nemo hic pariatur.</li>
+                <li class="slide__item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              </ul>
+              <button class="slide__button button" type="button">Lorem <span class="button__important-text">ipsum</span> dolor</button>
+            </li>
+            <!-- Третий слайд -->
+            <li class="slider__slide slide">
+              <p class="slide__slogan-text">Третий <span class="slide__important-text">слайд</span></p>
+              <ul class="slide__list">
+                <li class="slide__item">Fugiat, molestias quaerat nam dolor neque, aut quo beatae commodi reprehenderit autem voluptates dolore repudiandae et veritatis doloribus voluptas, nemo hic pariatur.</li>
+                <li class="slide__item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li class="slide__item">Fugiat, molestias quaerat nam dolor neque, aut quo beatae commodi reprehenderit autem voluptates dolore repudiandae et veritatis doloribus voluptas, nemo hic pariatur.</li>
+              </ul>
+              <button class="slide__button button" type="button">Sit <span class="button__important-text">amet</span> consectetur</button>
+            </li>
+            <!-- Четвертый слайд -->
+            <li class="slider__slide slide">
+              <p class="slide__slogan-text">Четвертый <span class="slide__important-text">слайд</span></p>
+              <ul class="slide__list">
+                <li class="slide__item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li class="slide__item">Fugiat, molestias quaerat nam dolor neque, aut quo beatae commodi reprehenderit autem voluptates dolore repudiandae et veritatis doloribus voluptas, nemo hic pariatur.</li>
+                <li class="slide__item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              </ul>
+              <button class="slide__button button" type="button">Consectetur <span class="button__important-text">adipisicing</span> elit</button>
+            </li>
+          </ul>
+          <!-- Переключатели слайдера -->
+          <ul class="slider__switches">
+            <li class="slider__switch">
+              <label><input type="radio" name="switch">Первый слайд</label>
+            </li>
+            <li class="slider__switch">
+              <label><input type="radio" name="switch">Второй слайд</label>
+            </li>
+            <li class="slider__switch">
+              <label><input type="radio" name="switch">Третий слайд</label>
+            </li>
+            <li class="slider__switch">
+              <label><input type="radio" name="switch">Четвертый слайд</label>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
