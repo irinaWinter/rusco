@@ -1,7 +1,25 @@
 .slider {
-  background-color: @main;
+  position: relative;
 }
 
 .slider__list {
   .list-reset();
+}
+
+.slide__container-switches {
+  display: flex;
+  justify-content: center;
+}
+
+.slider__switches {
+  .list-reset();
+  position: absolute;
+  bottom: 68px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0;
+}
+
+.slider__switch:not(:first-child) {
+  margin-left: 10px;
 }

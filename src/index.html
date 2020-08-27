@@ -106,20 +106,26 @@
           </li>
         </ul>
         <!-- Переключатели слайдера -->
-        <ul class="slider__switches">
-          <li class="slider__switch">
-            <label><input type="radio" name="switch" checked>Первый слайд</label>
-          </li>
-          <li class="slider__switch">
-            <label><input type="radio" name="switch">Второй слайд</label>
-          </li>
-          <li class="slider__switch">
-            <label><input type="radio" name="switch">Третий слайд</label>
-          </li>
-          <li class="slider__switch">
-            <label><input type="radio" name="switch">Четвертый слайд</label>
-          </li>
-        </ul>
+        <div class="slide__container-switches container">
+          <ul class="slider__switches">
+            <li class="slider__switch switch">
+              <input class="switch__input visually-hidden" type="radio" name="switch" id="first" checked>
+              <label class="switch__label" for="first">Первый слайд</label>
+            </li>
+            <li class="slider__switch switch">
+              <input class="switch__input visually-hidden" type="radio" name="switch" id="second">
+              <label class="switch__label" for="second">Второй слайд</label>
+            </li>
+            <li class="slider__switch switch">
+              <input class="switch__input visually-hidden" type="radio" name="switch" id="third">
+              <label class="switch__label" for="third">Третий слайд</label>
+            </li>
+            <li class="slider__switch switch">
+              <input class="switch__input visually-hidden" type="radio" name="switch" id="fourth">
+              <label class="switch__label" for="fourth">Четвертый слайд</label>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- Преимущества -->
       <section class="page-main__features features section">
