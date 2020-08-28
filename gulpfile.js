@@ -44,7 +44,7 @@ gulp.task("minify", function () {
 gulp.task("compress", function () {
   return pipeline(
     gulp.src("src/js/*.js"),
-    uglify(),
+    // uglify(),
     gulp.dest("build/js")
   );
 });
