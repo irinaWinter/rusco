@@ -1,14 +1,28 @@
 .main-nav__list {
   .list-reset();
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-nav__item:not(:first-child) {
-  margin-left: 48px;
+  margin-top: 20px;
 }
 
 .main-nav__link {
   color: @light;
   font-size: 18px;
+}
+
+@media (min-width: @desktop-width-sm) {
+  .main-nav__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .main-nav__item:not(:first-child) {
+    margin-top: 0;
+    margin-left: 48px;
+  }
 }

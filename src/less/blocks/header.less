@@ -5,7 +5,67 @@
 .header__container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
-  padding: 32px 0;
+  padding: 20px;
+}
+
+.header__main-nav-mobile-menu {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  width: 320px;
+  background-color: #121212;
+}
+
+.header__contacts {
+  margin-top: 20px;
+}
+
+.header__close-menu {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+@media (min-width: @phone-width) {
+  .header__container {
+    padding: 20px 40px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .header__container {
+    padding: 32px 60px;
+  }
+}
+
+@media (min-width: @desktop-width-sm) {
+  .header__close-menu {
+    display: none;
+  }
+
+  .header__main-nav-mobile-menu {
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: auto;
+    padding: 0;
+    width: auto;
+    background-color: transparent;
+  }
+
+  .header__contacts {
+    margin-top: 0;
+    margin-left: 105px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header__container {
+    padding: 32px 0;
+  }
 }
