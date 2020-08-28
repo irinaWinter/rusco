@@ -198,29 +198,29 @@
     </footer>
 
     <!-- Модальное окно с формой для заполнения заявки -->
-    <template id="request">
+    <!-- <template id="request"> -->
       <div class="popup">
         <section class="popup__section popup-section">
           <button class="popup-section__close-button" type="button" aria-label="Закрыть окно"></button>
           <h2 class="popup-section__heading section__heading">Задайте свой вопрос бухгалтеру</h2>
           <p class="popup-section__text">Консультация бесплатна и обычно занимает не более 15 минут, а полученные знания останутся с вами навсегда.</p>
-          <form class="popup-section__request-form request-form" action="#" method="post">
-            <ul class="request-form">
+          <form class="popup-section__request-form request-form" id="data" action="#" method="post">
+            <ul class="request-form__list">
               <li class="request-form__item">
-                <input type="text" placeholder="Ваше имя">
+                <input class="request-form__input" type="text" placeholder="Ваше имя" required>
               </li>
               <li class="request-form__item">
-                <input type="tel" placeholder="Номер телефона">
+                <input class="request-form__input" type="tel" placeholder="Номер телефона" required>
               </li>
             </ul>
           </form>
           <div class="popup-section__container">
-            <button class="popup-section__button" type="submit">Получить консультацию</button>
+            <button class="popup-section__button" type="submit" form="data">Получить консультацию</button>
             <p class="popup-section__text popup-section__text--warning">Нажимая на кнопку «получить консультацию», вы подтверждаете свое согласие на обработку пользовательских данных</p>
           </div>
         </section>
       </div>
-    </template>
+    <!-- </template> -->
 
     <!-- Модальное окно с сообщением об успешной отправке заявки -->
     <template id="success">
