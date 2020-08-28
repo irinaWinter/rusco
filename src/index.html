@@ -198,7 +198,7 @@
     </footer>
 
     <!-- Модальное окно с формой для заполнения заявки -->
-    <!-- <template id="request"> -->
+    <template id="request">
       <div class="popup">
         <section class="popup__section popup-section">
           <button class="popup-section__close-button" type="button" aria-label="Закрыть окно"></button>
@@ -220,16 +220,16 @@
           </div>
         </section>
       </div>
-    <!-- </template> -->
+    </template>
 
     <!-- Модальное окно с сообщением об успешной отправке заявки -->
     <template id="success">
       <div class="popup">
-        <section class="popup__section popup-section">
+        <section class="popup__section popup-section popup-section--success">
           <button class="popup-section__close-button" type="button" aria-label="Закрыть окно"></button>
           <p class="popup-section__heading section__heading">Спасибо</p>
-          <p class="popup-section__text">Ваша заявка принята</p>
-          <button class="popup-section__button" type="button">Хорошо</button>
+          <p class="popup-section__text popup-section__text--success">Ваша заявка принята</p>
+          <button class="popup-section__button popup-section__button--success" type="button">Хорошо</button>
         </section>
       </div>
     </template>
