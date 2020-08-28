@@ -197,6 +197,31 @@
       </div>
     </footer>
 
+    <!-- Модальное окно с формой для заполнения заявки -->
+    <template id="request">
+      <div class="popup">
+        <section class="popup__request request">
+          <button class="request__button popup__close-button" type="button" aria-label="Закрыть окно"></button>
+          <h2 class="request__heading section__heading">Задайте свой вопрос бухгалтеру</h2>
+          <p class="request__text">Консультация бесплатна и обычно занимает не более 15 минут, а полученные знания останутся с вами навсегда.</p>
+          <form class="request__form request-form" action="#" method="post">
+            <ul class="request-form">
+              <li class="request-form__item">
+                <input type="text" placeholder="Ваше имя">
+              </li>
+              <li class="request-form__item">
+                <input type="tel" placeholder="Номер телефона">
+              </li>
+            </ul>
+          </form>
+          <div class="request__container">
+            <button class="request-form__button" type="submit">Получить консультацию</button>
+            <p class="request__text request__text--warning">Нажимая на кнопку «получить консультацию», вы подтверждаете свое согласие на обработку пользовательских данных</p>
+          </div>
+        </section>
+      </div>
+    </template>
+
     <script src="js/slider.js"></script>
   </body>
 </html>
