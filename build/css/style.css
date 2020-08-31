@@ -488,8 +488,13 @@ html {
   -webkit-text-fill-color: transparent;
   color: #ffe6b6;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 30px;
   display: table;
+}
+@media (min-width: 480px) {
+  .section__heading {
+    font-size: 40px;
+  }
 }
 .main-nav__list {
   margin: 0;
@@ -711,14 +716,19 @@ html {
   padding: 0;
   list-style-type: none;
   position: relative;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 .features__feature:not(:first-child) {
   margin-top: 20px;
 }
+@media (min-width: 768px) {
+  .features__list {
+    margin-top: 60px;
+  }
+}
 .feature__button {
   padding: 18px;
-  width: 360px;
+  width: 100%;
   background-color: #121212;
   border: 1px solid #3f3f3f;
   border-radius: 10px;
@@ -732,13 +742,9 @@ html {
   color: #2b2b2b;
 }
 .feature__text {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  margin: 0;
-  padding: 60px 300px 60px 60px;
-  width: 780px;
+  margin: 20px 0 0;
+  padding: 30px;
+  width: 100%;
   background-image: linear-gradient(-251deg, rgba(0, 0, 0, 0.9) 2%, rgba(0, 0, 0, 0.6) 45%, transparent 100%), url("../img/team.jpg");
   background-size: cover;
   border: 1px solid #3f3f3f;
@@ -746,6 +752,30 @@ html {
   color: #ffffff;
   font-size: 18px;
   line-height: 140%;
+}
+@media (min-width: 1200px) {
+  .feature__text {
+    padding: 60px 120px 60px 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .feature__button {
+    width: 360px;
+  }
+  .feature__text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    padding-right: 300px;
+    width: 700px;
+  }
+}
+@media (min-width: 1920px) {
+  .feature__text {
+    width: 780px;
+  }
 }
 .contacts {
   position: relative;

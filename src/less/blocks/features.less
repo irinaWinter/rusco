@@ -10,9 +10,15 @@
 .features__list {
   .list-reset();
   position: relative;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .features__feature:not(:first-child) {
   margin-top: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .features__list {
+    margin-top: 60px;
+  }
 }
