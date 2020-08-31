@@ -616,10 +616,11 @@ html {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80px;
   font-size: 0;
-}
-.slider__switch:not(:first-child) {
-  margin-left: 10px;
 }
 @media (min-width: 1200px) {
   .slider__switches {
@@ -750,8 +751,8 @@ html {
 }
 .switch {
   position: relative;
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
 }
 .switch__label::before {
   content: "";
@@ -763,8 +764,13 @@ html {
   cursor: pointer;
 }
 .switch__input:checked ~ .switch__label::before {
+  top: -2.5px;
   background-color: #ffffff;
   border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .features {
   padding: 96px 0 40px;
@@ -780,6 +786,15 @@ html {
   list-style-type: none;
   position: relative;
   margin-top: 40px;
+}
+.features__list::before {
+  content: "";
+  position: absolute;
+  top: -116px;
+  right: -70%;
+  width: 100%;
+  height: 318px;
+  background-color: rgba(170, 111, 23, 0.2);
 }
 .features__feature:not(:first-child) {
   margin-top: 20px;
