@@ -6,6 +6,9 @@
     <title>РУСко</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/png">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=bd7873e4-1541-4ad2-91d2-eb4d28bb825d
+    &lang=ru_RU" type="text/javascript">
+    </script>
   </head>
   <body>
     <!-- Хедер -->
@@ -190,13 +193,14 @@
         </div>
         <!-- Карта -->
         <div class="contacts__map-container">
-          <picture>
+          <picture class="contacts__map-picture">
             <source media="(min-width: 1920px)" srcset="img/map@desktop-width.png">
             <source media="(min-width: 1200px)" srcset="img/map@desktop-width-sm.png">
             <source media="(min-width: 768px)" srcset="img/map@tablet-width.png">
             <source media="(min-width: 480px)" srcset="img/map@phone-width.png">
             <img class="contacts__map" src="img/map@phone-width-sm.png" alt="Расположение офиса на карте по адресу: г. Москва, 17-й проезд Марьиной рощи, д. 4, корп. 1">
           </picture>
+          <div class="contacts__map-interactive" id="map"></div>
         </div>
       </section>
     </main>
@@ -251,5 +255,6 @@
     <script src="js/slider.js"></script>
     <script src="js/popup.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>
