@@ -14,7 +14,7 @@
 .slider__switches {
   .list-reset();
   position: absolute;
-  bottom: 68px;
+  bottom: 42px;
   display: flex;
   flex-wrap: wrap;
   font-size: 0;
@@ -22,4 +22,10 @@
 
 .slider__switch:not(:first-child) {
   margin-left: 10px;
+}
+
+@media (min-width: @desktop-width-sm) {
+  .slider__switches {
+    bottom: 68px;
+  }
 }
