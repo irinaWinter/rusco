@@ -189,8 +189,15 @@
           </div>
         </div>
         <!-- Карта -->
-        <img class="contacts__map" src="img/map.png" width="1900" height="552" alt="Расположение офиса на карте по адресу: г. Москва, 17-й проезд<br>
-        Марьиной рощи, д. 4, корп. 1">
+        <div class="contacts__map-container">
+          <picture>
+            <source media="(min-width: 1920px)" srcset="img/map@desktop-width.png">
+            <source media="(min-width: 1200px)" srcset="img/map@desktop-width-sm.png">
+            <source media="(min-width: 768px)" srcset="img/map@tablet-width.png">
+            <source media="(min-width: 480px)" srcset="img/map@phone-width.png">
+            <img class="contacts__map" src="img/map@phone-width-sm.png" alt="Расположение офиса на карте по адресу: г. Москва, 17-й проезд Марьиной рощи, д. 4, корп. 1">
+          </picture>
+        </div>
       </section>
     </main>
     <!-- Футер -->

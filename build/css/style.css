@@ -834,9 +834,22 @@ html {
   margin-top: -10px;
   padding-top: 10px;
 }
+.contacts__map-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 .contacts__map {
-  width: 1900px;
+  width: 320px;
   height: 552px;
+}
+@media (min-width: 480px) {
+  .contacts__map {
+    width: 480px;
+  }
 }
 @media (min-width: 768px) {
   .contacts {
@@ -844,10 +857,26 @@ html {
     padding: 100px 0;
     min-height: 552px;
   }
-  .contacts__map {
+  .contacts__map-container {
     position: absolute;
-    top: 0;
     z-index: -1;
+    top: 10px;
+    width: 100%;
+  }
+  .contacts__map {
+    display: block;
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media (min-width: 1200px) {
+  .contacts__map {
+    width: 1200px;
+  }
+}
+@media (min-width: 1920px) {
+  .contacts__map {
+    width: 1920px;
   }
 }
 .contacts-card {
