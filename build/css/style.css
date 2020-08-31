@@ -857,20 +857,50 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 .footer__text {
-  margin: 0 0 0 156px;
+  margin: 25px 0 0;
   color: #c1c1c1;
   font-size: 14px;
 }
 .footer__text--link {
-  margin-left: 240px;
   text-decoration: underline;
+}
+@media (min-width: 768px) {
+  .footer__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__text {
+    margin: 0 0 0 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .footer__text {
+    margin: 0 0 0 156px;
+  }
+  .footer__text--link {
+    margin-left: 240px;
+  }
 }
 .popup {
   position: fixed;
