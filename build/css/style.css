@@ -831,39 +831,43 @@ html {
   }
 }
 .contacts {
-  position: relative;
   margin-top: -10px;
-  padding: 100px 0;
-  min-height: 552px;
+  padding-top: 10px;
 }
 .contacts__map {
-  position: absolute;
-  top: 0;
-  z-index: -1;
   width: 1900px;
   height: 552px;
 }
+@media (min-width: 768px) {
+  .contacts {
+    position: relative;
+    padding: 100px 0;
+    min-height: 552px;
+  }
+  .contacts__map {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+}
 .contacts-card {
-  padding: 40px;
-  width: 412px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #ffffff;
-  border-radius: 10px;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 .contacts-card__heading {
   margin: 0;
   color: #303030;
-  font-size: 30px;
+  font-size: 24px;
 }
 .contacts-card__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  margin-top: 30px;
+  margin-top: 25px;
 }
 .contacts-card__item:not(:first-child) {
-  margin-top: 17px;
+  margin-top: 15px;
 }
 .contacts-card__link {
   display: -webkit-box;
@@ -873,7 +877,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   color: #e9971d;
-  font-size: 25px;
+  font-size: 18px;
 }
 .contacts-card__link::before {
   content: "";
@@ -891,16 +895,48 @@ html {
   background-image: url("../img/icon-email-black.svg");
 }
 .contacts-card__address {
-  margin: 28px 0 0;
+  margin: 25px 0 0;
   color: #030303;
   font-size: 18px;
   font-weight: normal;
 }
 .contacts-card__text {
   margin: 10px 0 0;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 140%;
   font-weight: bold;
+}
+@media (min-width: 480px) {
+  .contacts-card__heading {
+    font-size: 30px;
+  }
+  .contacts-card__list {
+    margin-top: 30px;
+  }
+  .contacts-card__item:not(:first-child) {
+    margin-top: 17px;
+  }
+  .contacts-card__link {
+    font-size: 20px;
+  }
+  .contacts-card__address {
+    margin: 28px 0 0;
+  }
+  .contacts-card__text {
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) {
+  .contacts-card {
+    padding: 40px;
+    width: 412px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  }
+  .contacts-card__link {
+    font-size: 25px;
+  }
 }
 .footer {
   padding: 41px 0 34px;
