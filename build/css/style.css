@@ -363,23 +363,23 @@ html {
 .container {
   margin: 0 auto;
   padding: 0 20px;
-  width: 320px;
+  width: 300px;
 }
 @media (min-width: 480px) {
   .container {
-    width: 480px;
+    width: 460px;
   }
 }
 @media (min-width: 768px) {
   .container {
     padding: 0 40px;
-    width: 768px;
+    width: 748px;
   }
 }
 @media (min-width: 1200px) {
   .container {
     padding: 0 60px;
-    width: 1200px;
+    width: 1180px;
   }
 }
 @media (min-width: 1920px) {
@@ -765,6 +765,7 @@ html {
 }
 .switch__input:checked ~ .switch__label::before {
   top: -2.5px;
+  left: -2.5px;
   background-color: #ffffff;
   border-radius: 50%;
   width: 15px;
