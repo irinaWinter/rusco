@@ -4,9 +4,12 @@
   var bannerSlides = document.querySelectorAll('.slide');
   var bannerSwitches = document.querySelectorAll('.switch');
   var bannerActiveSlide = document.querySelector('.slide:not(.hidden)');
+  var switchButton = document.querySelector('.switch__label');
 
   bannerSwitchesList.addEventListener('click', function (evt) {
-    bannerSwitchesClickHandler(evt);
+    if (evt.target === switchButton) {
+      bannerSwitchesClickHandler(evt);
+    }
   });
 
   var bannerSwitchesClickHandler = function (evt) {
