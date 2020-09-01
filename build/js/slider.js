@@ -4,17 +4,6 @@
   var bannerSlides = document.querySelectorAll('.slide');
   var bannerSwitches = document.querySelectorAll('.switch');
   var bannerActiveSlide = document.querySelector('.slide:not(.hidden)');
-  var switchButton = document.querySelector('.switch__label');
-
-  bannerSwitchesList.addEventListener('click', function (evt) {
-    if (evt.target === switchButton) {
-      bannerSwitchesClickHandler(evt);
-    }
-  });
-
-  var bannerSwitchesClickHandler = function (evt) {
-    shangeBannerSlide(evt);
-  };
 
   var shangeBannerSlide = function (evt) {
     bannerActiveSlide.classList.add('hidden');
@@ -22,6 +11,30 @@
     bannerActiveSlide = bannerSlides[bannerActiveSlideId];
     bannerActiveSlide.classList.remove('hidden');
   };
+
+  var bannerSwitchesClickHandler = function (evt) {
+    shangeBannerSlide(evt);
+  };
+
+  bannerSwitchesList.addEventListener('click', function (evt) {
+    var switchButton = evt.target.closest('label');
+
+    if (switchButton) {
+      bannerSwitchesClickHandler(evt);
+    }
+  });
+
+  var switchInput = document.querySelectorAll('input[name=switch]');
+
+  var switchInputChangeHandler = function (evt) {
+    shangeBannerSlide(evt);
+  };
+
+  switchInput.forEach(function(item) {
+    item.addEventListener('change', function (evt) {
+      switchInputChangeHandler(evt);
+    });
+  });
 
   // преимущества
   var feature = document.querySelectorAll('.feature');
@@ -45,11 +58,4 @@
       switchesFocusHandler(evt);
     });
   });
-
-  // универсальный скрипт. Переписать скрипт
-  // var changeSlide = function (evt, slides, activeSlide, IDS) {
-  //   activeSlide.classList.add('hidden');
-  //   activeSlideId = Array.from(IDS).indexOf(evt.target.parentNode);
-  //   activeSlide = slides[activeSlideId];
-  // };
 })();
