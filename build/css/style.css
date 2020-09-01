@@ -899,7 +899,6 @@ html {
   }
   .contacts__map-container {
     position: absolute;
-    z-index: -1;
     top: 10px;
     width: 100%;
   }
@@ -1001,6 +1000,8 @@ html {
 }
 @media (min-width: 768px) {
   .contacts-card {
+    position: relative;
+    z-index: 1;
     padding: 40px;
     width: 412px;
     border-radius: 10px;
