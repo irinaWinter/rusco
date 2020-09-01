@@ -1,4 +1,5 @@
 (function () {
+
   var main = document.querySelector('.page-main');
 
   var openPopup = function (popup) {
