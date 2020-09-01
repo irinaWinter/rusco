@@ -779,22 +779,13 @@ html {
   background-size: 1377px 1377px;
   background-position: bottom -667px left -768px;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 .features__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  position: relative;
   margin-top: 40px;
-}
-.features__list::before {
-  content: "";
-  position: absolute;
-  top: -116px;
-  right: -70%;
-  width: 100%;
-  height: 318px;
-  background-color: rgba(170, 111, 23, 0.2);
 }
 .features__feature:not(:first-child) {
   margin-top: 20px;
@@ -802,6 +793,20 @@ html {
 @media (min-width: 768px) {
   .features__list {
     margin-top: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .features__list {
+    position: relative;
+  }
+  .features__list::before {
+    content: "";
+    position: absolute;
+    top: -116px;
+    right: -70%;
+    width: 100%;
+    height: 318px;
+    background-color: rgba(170, 111, 23, 0.2);
   }
 }
 .feature__button {
